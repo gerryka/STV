@@ -4982,6 +4982,8 @@
     _addNewItemCellExistsInNormalMode = FALSE;
     _addNewItemCellExistsInEditingMode = TRUE;
 	
+    self.backgroundColor = [UIColor clearColor];
+    
 	self.detailViewControllerOptions.tableViewStyle = UITableViewStyleGrouped;
 	self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	self.selectionStyle = UITableViewCellSelectionStyleBlue;
