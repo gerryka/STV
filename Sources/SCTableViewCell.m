@@ -4006,6 +4006,8 @@
 	_displayDatePickerAsInputAccessoryView = FALSE;
     self.showClearButtonInInputAccessoryView = TRUE;
     
+    self.detailTextLabel.backgroundColor = [UIColor clearColor];  // gerryka
+    
     // Track device orientation changes to correctly show/hide the date picker
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object:nil];
@@ -4982,7 +4984,7 @@
     _addNewItemCellExistsInNormalMode = FALSE;
     _addNewItemCellExistsInEditingMode = TRUE;
 	
-    self.backgroundColor = [UIColor clearColor];
+    self.detailTextLabel.backgroundColor = [UIColor clearColor];  // gerryka
     
 	self.detailViewControllerOptions.tableViewStyle = UITableViewStyleGrouped;
 	self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
