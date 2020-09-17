@@ -3623,6 +3623,7 @@
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
         if (@available(iOS 13.0, *)) {
             cell.textLabel.textColor = [UIColor linkColor]; // dgApps
+            cell.textLabel.backgroundColor = [UIColor clearColor];
         }
         else {
             cell.textLabel.textColor = [UIColor colorWithRed:50.0f/255 green:79.0f/255 blue:133.0f/255 alpha:1];
